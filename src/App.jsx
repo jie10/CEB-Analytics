@@ -35,7 +35,7 @@ function App(props) {
                                     <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                         {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                                         <Link
-                                            to="/home"
+                                            to="/"
                                             className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
                                         >
                                             Home
@@ -223,7 +223,7 @@ function App(props) {
                 )}
             </Disclosure>
             <Routes>
-                <Route path="/Home" element={<Home/>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/team" element={<Team/>}/>
                 <Route path="*" element={<ErrorPage/>}/>
             </Routes>
