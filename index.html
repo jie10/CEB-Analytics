@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-  w[l] = w[l] || []
-  w[l].push({
-    'gtm.start':
-      new Date().getTime(), event: 'gtm.js',
-  })
-  var f = d.getElementsByTagName(s)[0],
-    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
-  j.async = true
-  j.src =
-    'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-  f.parentNode.insertBefore(j, f)
-})(window, document, 'script', 'dataLayer', 'GTM-KB6VM23')</script>
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js',
+    })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
+    j.async = true
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-KB6VM23')</script>
 <!-- End Google Tag Manager -->
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRN2SRT7G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+
+      gtag('js', new Date())
+      gtag('event', 'exception', {description: 'error_description', fatal: false})
+
+      gtag('config', 'G-VCRN2SRT7G')
+    </script>
     <meta charset="UTF-8"/>
     <link href="/vite.svg" rel="icon" type="image/svg+xml"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -31,23 +46,7 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRN2SRT7G"></script>
-<script>
-  window.dataLayer = window.dataLayer || []
 
-  function gtag() {
-    dataLayer.push(arguments)
-  }
-
-  gtag('js', new Date())
-  gtag('event', 'exception', {
-    'description': 'error_description',
-    'fatal': false,   // set to true if the error is fatal
-  })
-
-  gtag('config', 'G-VCRN2SRT7G')
-</script>
 <div id="root"></div>
 <script src="/src/main.jsx" type="module"></script>
 </body>
